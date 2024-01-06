@@ -23,9 +23,9 @@ extract($_POST);
             //Server settings
             $mail->SMTPDebug = 0;                      // Enable verbose debug output
             $mail->isSMTP();  
-            $mail->Host       = 'smtp.cbgoldmanufacture.com';                    // Set the SMTP server to send through
+            $mail->Host       = 'smtp.cbgoldmanufacture.in';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        	$mail->Username   = 'sales@cbgoldmanufacture.com';                     // SMTP username
+        	$mail->Username   = 'sales@cbgoldmanufacture.in';                     // SMTP username
             $mail->Password   = 'YWMmqjZ7';                               // SMTP password
             $mail->SMTPSecure = 'TLS';
             $mail->Port       = 587;           
@@ -39,8 +39,8 @@ extract($_POST);
         	);
 
             //Recipients
-            $mail->setFrom('sales@cbgoldmanufacture.com', 'Sender');
-            $mail->addAddress('sales@cbgoldmanufacture.com', 'Receiver');     // Add a recipient
+            $mail->setFrom('sales@cbgoldmanufacture.in', 'Sender');
+            $mail->addAddress('sales@cbgoldmanufacture.in', 'Receiver');     // Add a recipient
             //$mail->addAddress('ellen@example.com');               // Name is optional
            // $mail->addReplyTo('info@example.com', 'Information');
             //$mail->addCC('cc@example.com');
