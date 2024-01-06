@@ -1,0 +1,12 @@
+<?php
+if(isset($_POST['mail'])){
+  session_start();
+  $_SESSION['id']=$_POST['contect_id'];
+  $_SESSION['from']=$_POST['from'];
+  $_SESSION['pass']=$_POST['pass'];
+  $_SESSION['to']=$_POST['to'];
+  $_SESSION['subject']=$_POST['subject'];
+  $_SESSION['message']=$_POST['message'];
+  header('location:./index.php');
+}
+?>
