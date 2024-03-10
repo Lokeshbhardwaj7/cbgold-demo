@@ -21,9 +21,9 @@ extract($_POST);
 
         try {
             //Server settings
-            $mail->SMTPDebug = 0;                      // Enable verbose debug output
+            $mail->SMTPDebug = 2;                      // Enable verbose debug output
             $mail->isSMTP();  
-            $mail->Host       = 'smtp.cbgoldmanufacture.in';                    // Set the SMTP server to send through
+            $mail->Host       = 'mail.cbgoldmanufacture.in';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
         	$mail->Username   = 'sales@cbgoldmanufacture.in';                     // SMTP username
             $mail->Password   = 'YWMmqjZ7';                               // SMTP password
