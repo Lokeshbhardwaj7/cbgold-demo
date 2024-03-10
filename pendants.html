@@ -1548,6 +1548,11 @@
         e.preventDefault();
       });
     </script>
+     <script>
+			document.querySelectorAll('.disabled').forEach(element => {
+    element.style.pointerEvents = 'none';
+});
+		  </script>
     <script type="text/javascript">
       (function () {
         var options = {

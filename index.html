@@ -920,6 +920,11 @@
         e.preventDefault();
       });
     </script>
+     <script>
+			document.querySelectorAll('.disabled').forEach(element => {
+    element.style.pointerEvents = 'none';
+});
+		  </script>
     <script src="libs/popper/js/popper.min.js"></script>
     <script src="libs/jquery/js/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>

@@ -949,6 +949,11 @@
         e.preventDefault();
       });
     </script>
+     <script>
+			document.querySelectorAll('.disabled').forEach(element => {
+    element.style.pointerEvents = 'none';
+});
+		  </script>
     <script src="assets/js/app.js"></script>
     <script type="text/javascript">
       (function () {
