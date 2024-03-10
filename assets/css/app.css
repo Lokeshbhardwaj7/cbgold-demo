@@ -34,7 +34,11 @@ html {
 
 body {
   font-family: Lato, sans-serif;
+  -webkit-touch-callout: none !important;
 }
+
+a { -webkit-user-select: none !important; }
+
 
 [class~=h3],
 [class~=h2],
@@ -58,6 +62,8 @@ a:hover,
 a:focus {
   color: #cb8161;
 }
+
+
 
 .animation-horizontal:hover {
   animation-duration: 1s;
